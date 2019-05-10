@@ -6,7 +6,7 @@
 /*   By: rmerien <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/24 08:39:18 by rmerien           #+#    #+#             */
-/*   Updated: 2019/03/27 13:58:13 by rmerien          ###   ########.fr       */
+/*   Updated: 2019/05/02 09:55:33 by rmerien          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,9 +55,10 @@ void		norme_v3(char **a, char *b, int *c)
 	*c += (b[*c] ? 1 : 0);
 }
 
-int			free_all(t_env *env, char **av)
+int		ft_uselessinit(int *c, int *a, char *b)
 {
-	free_tab(av);
-	free_env(env);
-	return (3);
+	*a = 0;
+	*c = 0;
+	*b = 0;
+	return (0);
 }

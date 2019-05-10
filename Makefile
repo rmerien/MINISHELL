@@ -6,7 +6,7 @@
 #    By: rmerien <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/03 15:45:35 by rmerien           #+#    #+#              #
-#    Updated: 2019/04/04 15:47:03 by rmerien          ###   ########.fr        #
+#    Updated: 2019/05/02 09:55:51 by rmerien          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,6 @@ SRCS		=	srcs/main.c					\
 				srcs/exe_file.c				\
 				srcs/get_line.c				\
 				srcs/aux.c					\
-				srcs/aux2.c					\
 				srcs/count_arglen.c			\
 				srcs/count_args.c			\
 				srcs/fill_args.c			\

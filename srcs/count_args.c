@@ -6,7 +6,7 @@
 /*   By: rmerien <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/18 11:53:28 by rmerien           #+#    #+#             */
-/*   Updated: 2019/04/19 10:53:11 by rmerien          ###   ########.fr       */
+/*   Updated: 2019/05/02 10:44:45 by rmerien          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,8 @@ int					ft_argcount(char *line)
 			else
 				ft_norminet(line, &info);
 		}
+		while (line[info.pos] == 9 || line[info.pos] == 32)
+			info.pos += 1;
 		count += 1;
 	}
 	return (info.sub ? -1 : count);

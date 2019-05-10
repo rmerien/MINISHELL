@@ -6,7 +6,7 @@
 /*   By: rmerien <rmerien@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/13 05:06:24 by rmerien           #+#    #+#             */
-/*   Updated: 2019/03/21 15:31:05 by rmerien          ###   ########.fr       */
+/*   Updated: 2019/05/02 10:43:01 by rmerien          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ int			modify_var(t_env **env, char *name, char *content)
 	save = *env;
 	while ((*env) && (*env)->next && ft_strcmp((*env)->name, name))
 		(*env) = (*env)->next;
-	if ((*env)->next && !ft_strcmp((*env)->name, name))
+	if (!ft_strcmp((*env)->name, name))
 	{
 		ft_strdel(&(*env)->content);
 		(*env)->content = ft_strdup(content);

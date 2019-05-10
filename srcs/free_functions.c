@@ -6,7 +6,7 @@
 /*   By: rmerien <rmerien@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/17 05:24:25 by rmerien           #+#    #+#             */
-/*   Updated: 2019/03/24 08:46:16 by rmerien          ###   ########.fr       */
+/*   Updated: 2019/05/02 20:21:12 by rmerien          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,12 @@ int		free_tab(char **argv)
 		argv = NULL;
 	}
 	return (1);
+}
+
+int			free_all(t_env *env, char **av)
+{
+	(void)env;
+	free_tab(av);
+//	free_env(env);
+	return (3);
 }
